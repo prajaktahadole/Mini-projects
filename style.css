@@ -100,3 +100,50 @@ button{
                font-size: larger;
             }
         }
+
+
+#post{
+    
+    display: flex;
+    flex-direction: row;
+}
+#post1{
+    width: 50%;
+}
+.postdiv1{
+    display: flex;
+}
+#Container-prod{
+ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.img1{
+    width: 25%;
+    height: 50%;
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width:320px)
+        {
+            #post1{
+                width: 100%;
+            }
+
+
+            #Container-prod{
+            
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+            }
+
+
+
+            #post{
+                display: flex;
+                flex-direction: column;
+            }
+        }
