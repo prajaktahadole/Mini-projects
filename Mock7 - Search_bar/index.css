@@ -1,0 +1,70 @@
+*{
+    text-align: center;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.submain{
+    display: flex;
+    width: 100%;
+}
+
+img{
+    margin: auto;
+    width: 20%;
+    height: 10%;
+}
+
+input {
+    width: 70%;
+    padding: 1rem;
+    border-radius: 4rem;
+  
+  }
+
+#displaydata{
+   margin: 25px;
+   margin-left: 150px;
+    padding: 1rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 70%;
+    max-height: 250px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+}
+
+.countryName {
+    padding: 1rem;
+    width: auto;
+  }
+
+  .countryName:hover {
+    background-color: gainsboro;
+    color: white;
+    cursor: pointer;
+  }
+
+  #clear{
+    margin-left: -275px;
+    width: 10%;
+    color: white;
+    border-radius: 18px;
+    padding: 12px;
+    background-color: gray;
+  }
+
+  #clear:hover{
+    background-color: cornsilk;
+    color: black;
+    cursor: pointer;
+  }
+
+  
