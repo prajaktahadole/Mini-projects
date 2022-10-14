@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/resigter.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <title>Register</title>
+</head>
+<body>
+    <div id="formdiv">
+        <H1 class="Head">Vaccination Registration</H1>
+        <form id="form">
+            <label >Unique ID :</label>
+            <input type="text", id="UniqueID" placeholder="Unique ID"/>
+            <label >Name:</label>
+            <input type="text", id="Name" placeholder="Name" />
+            <label >Age:</label>
+            <input type="number", id="Age" placeholder="Age"/>
+            <label>Designation:</label>
+            <select id="Designation">
+                <option value="">Designation</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+            </select>
+            
+            <label >Priority:</label>
+            <select id="Priority">
+                <option value="">Choose Priority </option>
+                <option value="P0">P0</option>
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+            </select> 
+            <label >Vaccine:</label>
+            <select id="Vaccine">
+                <option value="">Choose Vaccine </option>
+                <option value="Covishield">Covishield</option>
+                <option value="Covaxin"> Covaxin</option>
+                <option value="Sputnik">Sputnik</option>   
+            </select>
+            <input type="submit" value="Register" class="submit"/>
+         </form> 
+    </div>
+
+
+    <div class="filter">
+       
+          <select name="" id="vaccineFilter" onchange="filterVaccine()">
+            <option value="">Choose Vaccine </option>
+            <option value="Covishield">Covishield</option>
+            <option value="Covaxin"> Covaxin</option>
+            <option value="Sputnik">Sputnik</option> 
+          </select>
+
+          <select id="AgeSort" onchange="SortAge()">
+            <option value="">Age sort</option>
+            <option value="high">High to low</option>
+            <option value="low">Low to High</option>
+          </select>
+
+          <select name="" id="PriorityFilter" onchange="filterPriority()">
+            <option value="">Select Priority</option>
+            <option value="PO">P0</option>
+            <option value="P1">P1</option>
+            <option value="P2">P2</option>
+            <option value="P3">P3</option>
+          </select>
+    </div>
+
+    <div id="info">
+        <h1  class="Head">Vaccination Details</h1>
+    
+        <table id="container">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Unique ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Designation</th>
+                    <th>Priority</th>
+                    <th>Vaccine</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div> 
+
+
+
+
+
+</body>
+</html>
+<script src="./Script/register.js"></script>
+<script src="./Script/filters.js"></script>

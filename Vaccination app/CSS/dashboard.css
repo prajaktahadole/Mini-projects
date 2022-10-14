@@ -1,0 +1,29 @@
+.Head{
+    color: teal;
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
+  
+  th {
+    color: white;
+    border: 1px solid white;
+    background-color: teal;
+    text-align: left;
+    padding: 8px;
+  }
+  td{
+    border: 1px solid white;
+  }
+  tr:nth-child(odd) {
+    background-color: #c7a1a1;
+  }
+
+  .filter{
+    width: 30%;
+    display: flex; 
+    justify-content: left;
+   }
