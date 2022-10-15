@@ -1,0 +1,77 @@
+#navmain{
+    margin: auto;
+    display: flex;
+    background-color: green;
+    color: white;
+    height: 50px;
+    padding: 25px 0 0 20px;
+    font-size: larger;
+    justify-content: space-around;
+}
+
+input{
+    height: 35px;
+    margin-top: -10px;
+    width: 150%;
+    border-radius: 4rem;
+}
+
+
+#displayHome{
+    width: 70%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 40px;
+    margin: auto;
+}
+
+#displayHome> div{
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+
+#buttHome :hover{
+  color: aliceblue;
+  background-color: black;
+
+}
+
+#displayPuppy{
+    width: 85%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    gap: 40px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+#Imgcard{
+    width: 100%;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 15px;
+}
+
+
+#Imgcard > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+#displaySearch{
+    width: 85%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    gap: 40px;
+    margin: auto;
+    margin-top: 35px;
+
+}
