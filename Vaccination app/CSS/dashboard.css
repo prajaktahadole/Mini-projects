@@ -27,5 +27,15 @@ table {
     display: flex; 
     margin-left: 810px;
     margin-bottom: 10px;
-   
    }
+
+   #navmain{
+    margin: auto;
+    display: flex;
+    background-color: teal;
+    color: white;
+    height: 50px;
+    padding: 25px 0 0 20px;
+    font-size: larger;
+    justify-content: space-around;
+}

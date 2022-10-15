@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <title>Dashboard </title>
+</head>
+<body>
+
+
+    <div id="navmain">
+        <div onclick="window.location.href='./index.html'">Register</div>
+        <div onclick="window.location.href='./'">Dashboard</div>
+        <div onclick="window.location.href='./vaccination.html'" >Vaccination</div>      
+    </div>
+
+    <div id="info">
+        <h1  class="Head">Vaccination Details</h1>
+
+        <div class="filter">
+       
+            <select name="" id="vaccineFilter" onchange="filterVaccine()">
+              <option value="">Choose Vaccine </option>
+              <option value="Covishield">Covishield</option>
+              <option value="Covaxin"> Covaxin</option>
+              <option value="Sputnik">Sputnik</option> 
+            </select>
+  
+            <select id="AgeSort" onchange="SortAge()">
+              <option value="">Age sort</option>
+              <option value="high">High to low</option>
+              <option value="low">Low to High</option>
+            </select>
+  
+            <select name="" id="PriorityFilter" onchange="filterPriority()">
+              <option value="">Select Priority</option>
+              <option value="PO">P0</option>
+              <option value="P1">P1</option>
+              <option value="P2">P2</option>
+              <option value="P3">P3</option>
+            </select>
+      </div>
+    
+        <table id="container">
+            <thead>
+                <tr>
+                    <th>Unique ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Designation</th>
+                    <th>Priority</th>
+                    <th>Vaccine</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>  
+</body>
+</html>
+<script src="./Script/dashboard.js"></script>
+<script src="./Script/register.js"></script>
+<script src="./Script/filters.js"></script>

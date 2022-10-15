@@ -1,6 +1,4 @@
-
 /// FILTER
-
 
 function filterVaccine(){
     var selected = document.querySelector("#vaccineFilter").value;
