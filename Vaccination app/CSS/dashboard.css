@@ -25,5 +25,7 @@ table {
   .filter{
     width: 30%;
     display: flex; 
-    justify-content: left;
+    margin-left: 810px;
+    margin-bottom: 10px;
+   
    }
