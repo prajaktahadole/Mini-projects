@@ -1,7 +1,6 @@
 var detailArr = JSON.parse(localStorage.getItem("RegistrationArray")) || [];
 
-console.log(detailArr);
-const container = document.getElementById("container");
+const container = document.getElementById("Successful-container");
  
 function displayData(detailArr){
     document.querySelector("tbody").innerHTML = "";
@@ -31,41 +30,14 @@ function displayData(detailArr){
     Vaccine.textContent = elem.Vaccine;
     Vaccine.className = "Vaccine"
 
-    let del_td = document.createElement("td");
-    let delbutt = document.createElement("div");
-    delbutt.className = "delbutt";
-    delbutt.innerText = "Delete";
-    del_td.append(delbutt);
+    var Status = document.createElement("td");
+    Status.textContent = elem.Status;
+    Status.className = "Status"
 
-    del_td.addEventListener("click", function(){
-      DeleteFun(elem);
-    });
-
-    let vacc_td = document.createElement("td");
-    let vaccbutt = document.createElement("div");
-    vaccbutt.className = "vaccbutt";
-    vaccbutt.innerText = "Vaccinate";
-    vacc_td.append(vaccbutt);
-
-    vacc_td.addEventListener("click", function(){
-      OTPFun(elem);
-    });
-
-    tr.append( UniqueID, Name, Age, Designation,Priority , Vaccine, vacc_td, del_td);
+    
+    tr.append( UniqueID, Name, Age, Designation,Priority , Vaccine, Status);
     document.querySelector("tbody").append(tr);
     });
 }
+
 displayData(detailArr); 
-
-
-function DeleteFun(elem)
-{
-  localStorage.removeItem(this.elem);
-  alert("deleted")
-}
-
-
-function OTPFun(elem)
-{
-  alert("OTP function call")
-}

@@ -1,5 +1,5 @@
     document.querySelector("form").addEventListener("submit", vaccinationdetails);
-    var detailArr = JSON.parse(localStorage.getItem("FinalArray")) || [] ;
+    var detailArr = JSON.parse(localStorage.getItem("RegistrationArray")) || [] ;
 
     window.addEventListener("load", function(){
         displayData(detailArr);
@@ -56,14 +56,16 @@
         Age : Age, 
         Designation : Designation,
         Priority : Priority,
-        Vaccine : Vaccine
+        Vaccine : Vaccine,
+        Status : false
+        
     }
 
     if(NamVal == true && AgeVal == true  && otherVal== true){
         alert("Registration successful");
         detailArr.push(Productlist);
         console.log(detailArr);
-        localStorage.setItem("FinalArray", JSON.stringify(detailArr));
+        localStorage.setItem("RegistrationArray", JSON.stringify(detailArr));
         window.location.href = "dashboard.html"   
         displayData(detailArr)
     } 

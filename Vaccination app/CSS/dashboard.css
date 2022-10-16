@@ -22,6 +22,10 @@ table {
     background-color: #c7a1a1;
   }
 
+  tr{
+    padding: 2px;
+  }
+
   .filter{
     width: 30%;
     display: flex; 
@@ -38,4 +42,5 @@ table {
     padding: 25px 0 0 20px;
     font-size: larger;
     justify-content: space-around;
+    cursor: pointer;
 }
