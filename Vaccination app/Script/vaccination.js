@@ -30,12 +30,12 @@ function displayData(detailArr){
     Vaccine.textContent = elem.Vaccine;
     Vaccine.className = "Vaccine"
 
-    var Status = document.createElement("td");
-    Status.textContent = elem.Status;
-    Status.className = "Status"
+    // var Status = document.createElement("td");
+    // Status.textContent = elem.Status;
+    // Status.className = "Status"
 
     
-    tr.append( UniqueID, Name, Age, Designation,Priority , Vaccine, Status);
+    tr.append( UniqueID, Name, Age, Designation,Priority , Vaccine,);
     document.querySelector("tbody").append(tr);
     });
 }

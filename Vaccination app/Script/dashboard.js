@@ -51,6 +51,24 @@ function displayData(detailArr){
       OTPFun(elem);
     });
 
+    function DeleteFun(elem)
+    {
+      localStorage.removeItem(this.elem);
+      alert("deleted")
+    }
+
+
+    function OTPFun(elem) 
+    {
+      elem.Status = true;
+      alert("OTP function call")
+    }
+
+
+
+
+
+
     tr.append( UniqueID, Name, Age, Designation,Priority , Vaccine, vacc_td, del_td);
     document.querySelector("tbody").append(tr);
     });
@@ -58,14 +76,3 @@ function displayData(detailArr){
 displayData(detailArr); 
 
 
-function DeleteFun(elem)
-{
-  localStorage.removeItem(this.elem);
-  alert("deleted")
-}
-
-
-function OTPFun(elem)
-{
-  alert("OTP function call")
-}
